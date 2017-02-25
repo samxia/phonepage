@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>WeUI</title>
+    <!-- 引入 WeUI -->
+    <link rel="stylesheet" href="weui/weui.css">
+</head>
+<body ontouchstart>
+<div class="weui-search-bar" id="search_bar">
+    <form class="weui-search-bar__form">
+        <div class="weui-search-bar__box">
+            <i class="weui-icon-search"></i>
+            <input type="search" class="weui-search-bar__input" id="search_input" placeholder="输入联系人相关信息" />
+            <a href="javascript:" class="weui-icon-clear" id="search_clear"></a>
+        </div>
+        <label for="search_input" class="weui-search-bar__label" id="search_text">
+            <i class="weui-icon-search"></i>
+            <span>搜索</span>
+        </label>
+    </form>
+    <a href="javascript:" class="weui-search-bar__cancel-btn" id="search_cancel">取消</a>
+</div>
+<div class="weui-tabbar">
+    <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+        <img src="images/weui-tabbar__icon_contacts.png" alt="" class="weui-tabbar__icon">
+        <p class="weui-tabbar__label">联系人</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+        <img src="images/weui-tabbar__icon_baojia.png" alt="" class="weui-tabbar__icon">
+        <p class="weui-tabbar__label">报价</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+        <img src="images/weui-tabbar__icon_xiaoshoudan.png" alt="" class="weui-tabbar__icon">
+        <p class="weui-tabbar__label">销售单</p>
+    </a>
+    <a href="javascript:;" class="weui-tabbar__item">
+        <img src="images/weui-tabbar__icon_shezhi.png" alt="" class="weui-tabbar__icon">
+        <p class="weui-tabbar__label">设置</p>
+    </a>
+</div>
+
+</body>
+</html>
