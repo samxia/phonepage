@@ -26,7 +26,7 @@ $(function(){
         })
         .on('input', function(){
             if(this.value.length) {
-                $searchResult.show();
+               // $searchResult.show();
             } else {
                 $searchResult.hide();
             }
