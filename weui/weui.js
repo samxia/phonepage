@@ -25,13 +25,9 @@ $(function(){
             if(!this.value.length) cancelSearch();
         })
         .on('input', function(){
-            if(this.value.length) {
-               // $searchResult.show();
-                $.ajax({type:'get',url:'service?key=1',dataType:'',success:function(data){
-                    console.log("ajax success:"+data);
-                    var res=eval("("+data.responseText+")");
-                    jQuery("#list2")[0].addJSONData(res);
-                }})
+            if (this.value.length) {
+                // $searchResult.show();
+                getContactGridDataByAjax(this.value);
             } else {
                 $searchResult.hide();
             }
